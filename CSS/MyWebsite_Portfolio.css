@@ -444,3 +444,78 @@ html {
 	  padding: 2%;
 	  background-color:white;
   }
+
+  marquee {
+	  text-align: center;
+  }
+  
+  .btn btn-danger {
+	width: 25vw;
+  }
+
+  .blueHighlight{
+	background-color: white;
+	border-radius: 7px;
+  }
+
+  #skills, #portfolio{
+	padding-top: 55px;
+  }
+  #home, #skills {
+	margin-bottom: 150px;
+  }
+  
+  #skillsShade {
+	background-color: rgba(27, 27, 27, 0.795);
+	border-radius: 7px;
+  }
+
+  .windowCover{
+	height: 100vh;
+	min-height: 350px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  
+  }
+
+  #background3 {
+	background: url('../images/background1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 2%;
+	padding-bottom: 14%;
+  }
+
+  .option {
+	padding-top: 0px;
+  }
+  
+  #contact {
+	padding-bottom: 600px; 
+	/*This was done to test out scrolling feature seince contact is the last div in the page so far.. 4/9/19 */
+  }
+
+  .projectLogos{
+	margin: 0 auto;
+	width: 70%;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	opacity: 0.9;
+  }
+  
+  .projectLogos:hover {
+	opacity: 0.7;
+  }
+
+  .card-text {
+	  color: white;
+  }
+  
+  .card-title {
+	  text-align: center;
+  }

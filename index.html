@@ -17,6 +17,8 @@
 		<a href="#Slideshow">Slideshow</a>
 		<a href="#About">About</a>
 		<a href="#GitHub">GitHub</a>
+		<a href="#Resource">Resources</a>
+		<a href="#portfolio">Portfolio</a>
 		<a onclick="openForm()" ondblclick="closeForm()">Contact</a>
 	</div>
 
@@ -118,7 +120,7 @@
   
 		<div class="Column_1"> <!-- Right column -->
 			<h1>About</h2>
-				<p>I am a sofware developer who loves to code and enjoy finding solutions.<br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
+				<p>I am a sofware developer who loves to code and enjoy finding solutions.<br><br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!</p>
 		</div>
 	</div>
 
@@ -135,6 +137,59 @@
 		</div>
 	</div>
 
+	<!-- Resource Section -->
+	<div class="Row" id="Resource"> 
+		<div class="Column_2"> <!-- Left column -->
+			<img src="./images/resources-home_2.jpg" alt="Laptop">
+		</div>
+  
+		<div class="Column_1"> <!-- Right column -->
+			<h1>Resource</h2>
+				<button type="button" class="btn btn-danger"><a href="https://docs.google.com/document/d/1NdaMabp8MOkIe9bCoeHTqfAeQ86PiqvxPOFnKU4SORM/edit?usp=sharing">Resume</a></button>
+				<button type="button" class="btn btn-danger"><a href="https://www.linkedin.com/in/nisakay/">Linkedin</a></a></button>
+		</div>
+	</div>
+	<!-- Portfolio -->
+	<div class="container-fluid" class="windowCover">
+		<div id="portfolio">
+			<div id="background3">
+				<div class="option text-light"> 
+					<h1 class="display-4"><span class="blueHighlight">Portfolio:</span></h1><br><br>
+					<div class="card-group text-light" id="skillsShade">
+
+						<div class="card">
+							<a class="projectLogos" href="https://github.com/nisakay/Django_Movie_App" target="_blank"><img src="./images/MovieUpapp.jpg" class="card-img-top" alt="MovieUpapp Logo"></a>
+							<div class="card-body">
+								<h5 class="card-title"><span class="blueHighlight">Movie Search App</span></h5>
+								<p class="card-text">Created a web application using Python (Django) that allows users to search for movies. Ultimately, users get a response containing real-time data from API requests.Developed login, logout, register, and authentication logic to a web application using Python(Django).Learned to quickly adapt to unfamiliar technologies and to utilize technical terminologies in clever ways to explain concepts, thus facilitating communication between teammates.</p>
+								<p class="card-text"><small class="text-muted">Last updated 1/28/21</small></p>
+							</div>
+						</div>
+
+						<div class="card">
+							<a class="projectLogos" href="https://github.com/nisakay/Car_InsuranceC-" target="_blank"><img src="./images/Car-Insurance.jpg" class="card-img-top" alt="Car Inssurance"></a>
+							<div class="card-body">
+									<h5 class="card-title"><span class="blueHighlight">Car Insurance Quote Generator</span></h5>
+								<p class="card-text">Car Insurance This project is an MVC web application that mimics a car insurance website. It takes the user's input on policy information and calculates a quote based on business logic. There is also an admin page that allows staff to view all of the quotes that have been issued.</p>
+								<p class="card-text"><small class="text-muted">Last updated 1/28/21 </small></p>
+							</div>
+						</div>
+
+						<div class="card">
+							<a class="projectLogos" href="https://github.com/nisakay/JavaScript-Projects/tree/master/Pizza_Project" target="_blank"><img src="./images/pizza-order.jpg" class="card-img-top" alt="Pizza Project Logo"></a>
+							<div class="card-body">
+								<h5 class="card-title"><span class="blueHighlight">&nbspPizza Order Drill&nbsp</span></h5>
+								<p class="card-text">Created a pizza order simulation by using a function chain structure in JavaScript. While working for this project, I was learning how back end and front end developing can be used to tranform a static page to a fully functional dynamic page with using HTML, CSS, and JavaScript.</p>
+								<p class="card-text"><small class="text-muted">Last updated 1/28/21</small></p>
+							</div>
+						</div>
+
+					</div>
+				</div>    
+			</div>
+		</div>
+	</div>
+
 <!-- Contact section -->
 	<div id="Contact"> 
 		<button onclick="openForm()" class="Pop_Up_Button"> CONTACT </button>
@@ -142,8 +197,16 @@
 			<form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- This specifies where to send the form data and how; it is left blank -->
 		
 			<h1>Contact</h> 
-				<button type="button" class="btn btn-danger"><a href="https://docs.google.com/document/d/1NdaMabp8MOkIe9bCoeHTqfAeQ86PiqvxPOFnKU4SORM/edit?usp=sharing">Resume</a></button>
-				<button type="button" class="btn btn-danger"><a href="https://www.linkedin.com/in/nisakay/">Linkedin</a></a></button>
+				<label for="name"><b>Name</b></label>
+				<input type="text" placeholder="Type your name here" name="name" required>
+			<label for="phone"><b>Phone</b></label>
+				<input type="text"  placeholder="Enter your phone number here" name="phone">
+			<label for="email"><b>Email</b></label>
+				<input type="text"  placeholder="Type your email adress here" name="email" required>	
+			<label for="message"><b>Message</b></label>
+				<input type="text"   placeholder="Type your message here" name="message">
+
+			<button type="submit" class="btn">SUBMIT</button>
 			<button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
 				</form>
 			</div>
@@ -152,7 +215,7 @@
 <!-- Footer section -->
 	<footer>
 		<p>
-			<center>&copy Prosper Consulting Inc.,  <a href="https://learncodinganywhere.com/">The Tech Academy</a></center><br>
+			<marquee behavior="scroll" bgcolor="white" loop="-1" width="30%"><i><font color="black"><strong>Today's date is :<span id="time"></span></strong>  </font></i></marquee> 
 		</p>
 	</footer>
 
