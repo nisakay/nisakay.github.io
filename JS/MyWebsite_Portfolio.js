@@ -34,5 +34,6 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";        
 }
 
+
 var today = new Date();
  document.getElementById('time').innerHTML=today;

@@ -92,6 +92,8 @@ html {
 		  transform: scale(1,1);
 	  }
   }
+
+  
   
   /* Video */
   #Typing_Video {
@@ -324,7 +326,7 @@ html {
   
   /* Paragraph element hover effect */
   p:hover {
-	  color: #00004d;	
+
 	  transition: transform 1s;
 	  transform: scale(1.01);
   }
@@ -439,6 +441,9 @@ html {
 	border-color: black;
   }	
 
+  
+
+
   marquee {
 	text-align: center;
 }
@@ -515,6 +520,7 @@ html {
   
   /* Footer element */
   footer {
+	  text-align: center;
 	  padding: 2%;
 	  background-color:white;
   }
